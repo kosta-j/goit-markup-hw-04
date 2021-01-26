@@ -1,4 +1,6 @@
 :root {
+  --card-grid-gap: 30px;
+
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -9,7 +11,14 @@
   --main-font-family: 'Roboto', sans-serif;
   --logo-font-family: 'Raleway', sans-serif;
 
-  --card-grid-gap: 30px;
+  --shadow-team-card: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  --shadow-portfolio-card-hover: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  --shadow-filter-button-hover: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* RESETS */
@@ -59,6 +68,7 @@ body {
   font-family: var(--main-font-family);
   letter-spacing: 0.03em;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -87,6 +97,7 @@ body {
   font-family: var(--logo-font-family);
   line-height: 1.19;
 }
+
 .header-logo .logo-span,
 .footer-logo .logo-span {
   color: var(--accent-color);
@@ -105,11 +116,13 @@ body {
   border: 0;
   border-radius: 4px;
 }
+
 .button:hover,
 .button:focus,
 .button.active {
   color: var(--main-bg-color);
   background-color: var(--accent-color);
+  box-shadow: var(--shadow-filter-button-hover);
 }
 
 /* SECTION */
@@ -305,8 +318,10 @@ body {
   width: calc(100% / 4 - var(--card-grid-gap));
   margin-right: var(--card-grid-gap);
   margin-bottom: var(--card-grid-gap);
+
   background-color: var(--main-bg-color);
   border-radius: 0 0 4px 4px;
+  box-shadow: var(--shadow-team-card);
 }
 
 .team-description-wrapper {
@@ -422,4 +437,9 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: var(--shadow-portfolio-card-hover);
 }
