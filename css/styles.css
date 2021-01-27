@@ -60,7 +60,6 @@ li {
 /* COMMON STYLES */
 body {
   margin: auto;
-  width: 1600px;
   color: var(--primary-text-color);
   background-color: var(--main-bg-color);
 
@@ -147,12 +146,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header-logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--title-text-color);
 }
 
@@ -172,6 +173,8 @@ body {
 
 .site-nav .link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -196,6 +199,8 @@ body {
 
 .header-contacts {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -216,6 +221,8 @@ body {
 
 /* HERO */
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   color: var(--main-bg-color);
   background-color: var(--secondary-dark-bg-color);
 }
