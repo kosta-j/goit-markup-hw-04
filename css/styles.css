@@ -383,6 +383,35 @@ body {
 }
 /* TEAM end */
 
+/* CLIENTS */
+.clients-container > * {
+  outline: 1px solid red;
+}
+.clients-item {
+  outline: 1px solid teal;
+}
+
+.clients {
+  display: flex;
+  margin-right: calc(-1 * var(--card-grid-gap));
+}
+
+.clients-item {
+  width: calc(100% / 6 - var(--card-grid-gap));
+  margin-right: var(--card-grid-gap);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+/* CLIENTS end */
+
 /* FOOTER */
 .page-footer {
   color: var(--main-bg-color);
