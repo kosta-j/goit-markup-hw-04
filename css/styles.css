@@ -197,8 +197,32 @@ body {
   display: flex;
 }
 
+.contacts-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-icon.envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.contacts-icon.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
 .header-contacts {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -214,8 +238,8 @@ body {
   color: var(--accent-color);
 }
 
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
+.header-contacts:hover .contacts-icon {
+  fill: var(--accent-color);
 }
 /* HEADER end */
 
