@@ -448,16 +448,10 @@ body {
   fill: currentColor;
 }
 
-/* .social-links-item:hover,
-.social-links-item:focus {
-  background-color: var(--accent-color);
-} */
-
 .social-link:hover,
 .social-link:focus {
   color: var(--main-bg-color);
   background-color: var(--accent-color);
-  /* background-color: var(--accent-color); */
 }
 /* TEAM end */
 
@@ -481,8 +475,6 @@ body {
   margin-right: var(--card-grid-gap);
 
   color: var(--primary-text-color);
-  border: 1px solid var(--icon-light-grey-color);
-  border-radius: 4px;
 }
 
 .clients-icon-link {
@@ -493,6 +485,15 @@ body {
   height: 100%;
 
   color: var(--icon-light-grey-color);
+
+  border: 1px solid var(--icon-light-grey-color);
+  border-radius: 4px;
+}
+
+.clients-icon-link:hover,
+.clients-icon-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .clients-icon {
