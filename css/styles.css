@@ -7,6 +7,7 @@
   --main-bg-color: #ffffff;
   --secondary-light-bg-color: #f5f4fa;
   --secondary-dark-bg-color: #2f303a;
+  --icon-light-grey-color: #afb1b8;
 
   --main-font-family: 'Roboto', sans-serif;
   --logo-font-family: 'Raleway', sans-serif;
@@ -56,6 +57,7 @@ li {
   font-style: normal;
 }
 /* RESETS end */
+/* ============================== */
 
 /* COMMON STYLES */
 body {
@@ -137,6 +139,7 @@ body {
   text-align: center;
 }
 /* COMMON STYLES end */
+/* ============================== */
 
 /* HEADER */
 .page-header {
@@ -423,9 +426,6 @@ body {
 .social-links-item {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background-color: var(--main-bg-color);
-  border: 1px solid teal;
 }
 
 .social-link {
@@ -435,7 +435,10 @@ body {
   width: 100%;
   height: 100%;
 
-  color: var(--primary-text-color);
+  color: var(--icon-light-grey-color);
+
+  border-radius: 50%;
+  background-color: var(--main-bg-color);
 }
 
 .social-icon {
@@ -443,36 +446,59 @@ body {
   height: 20px;
 
   fill: currentColor;
-  color: ;
+}
+
+/* .social-links-item:hover,
+.social-links-item:focus {
+  background-color: var(--accent-color);
+} */
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--main-bg-color);
+  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
 }
 /* TEAM end */
 
 /* CLIENTS */
-.clients-container > * {
+/* .clients-container > * {
   outline: 1px solid red;
 }
 .clients-item {
   outline: 1px solid teal;
-}
+} */
 
 .clients {
   display: flex;
   margin-right: calc(-1 * var(--card-grid-gap));
+  align-items: center;
 }
 
 .clients-item {
   width: calc(100% / 6 - var(--card-grid-gap));
+  height: 90px;
   margin-right: var(--card-grid-gap);
-  border: 1px solid #afb1b8;
+
+  color: var(--primary-text-color);
+  border: 1px solid var(--icon-light-grey-color);
   border-radius: 4px;
 }
 
 .clients-icon-link {
   display: flex;
-  width: 40px;
-  height: 40px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+
+  color: var(--icon-light-grey-color);
+}
+
+.clients-icon {
+  width: 89px;
+  height: 59px;
+  fill: currentColor;
 }
 /* CLIENTS end */
 
