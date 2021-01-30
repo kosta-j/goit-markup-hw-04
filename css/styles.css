@@ -262,7 +262,6 @@ body {
 
 .header-contacts {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -555,7 +554,6 @@ body {
 
 .footer-container {
   display: flex;
-  justify-content: flex-start;
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -652,7 +650,7 @@ body {
   margin-right: var(--card-grid-gap);
   margin-bottom: var(--card-grid-gap);
 
-  outline: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .project-item .link {
