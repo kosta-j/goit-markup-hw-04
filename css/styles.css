@@ -651,6 +651,17 @@ body {
   flex-basis: calc(100% / 3 - var(--card-grid-gap));
   margin-right: var(--card-grid-gap);
   margin-bottom: var(--card-grid-gap);
+
+  outline: 1px solid #eeeeee;
+}
+
+.project-item .link {
+  display: block;
+}
+
+.project-item .link:hover,
+.project-item .link:focus {
+  box-shadow: var(--shadow-portfolio-card-hover);
 }
 
 .project-list .title {
@@ -671,12 +682,4 @@ body {
   padding: 20px 24px;
 
   background-color: var(--main-bg-color);
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.project-item:hover,
-.project-item:focus {
-  box-shadow: var(--shadow-portfolio-card-hover);
 }
